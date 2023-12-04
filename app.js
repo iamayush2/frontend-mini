@@ -4,6 +4,10 @@ let cust = document.querySelector(".coustmer");
 let login = document.querySelector(".login-btn");
 let back = document.querySelector(".back-btn");
 let admin = document.querySelector(".administor");
+let link = document.querySelector(".link");
+let id = document.querySelector(".id");
+let idvalue = `${Number(id.value)} `;
+
 select.addEventListener("click", function (e) {
   console.log("Hello");
   select.style.display = "none";
@@ -26,6 +30,8 @@ farmer.onclick = () => {
   cust.style.display = "none";
   login.style.display = "flex";
   optName.textContent = "Farmer";
+  link.href = "farmer.html";
+  console.log(`${id.value}`);
 };
 
 cust.onclick = () => {
@@ -36,6 +42,7 @@ cust.onclick = () => {
   login.style.display = "flex";
   cust.style.display = "none";
   optName.textContent = "Customer";
+  link.href = "customer.html";
 };
 admin.onclick = () => {
   mainDynamicCont.style.display = "flex";
@@ -45,6 +52,7 @@ admin.onclick = () => {
   login.style.display = "flex";
   cust.style.display = "none";
   optName.textContent = "Administer";
+  link.href = "admin.html";
 };
 
 back.onclick = () => {
@@ -57,3 +65,5 @@ back.onclick = () => {
   admin.style.display = "none";
   back.style.display = "none";
 };
+
+// farmer page
