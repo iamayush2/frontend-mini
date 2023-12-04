@@ -1,0 +1,263 @@
+@font-face {
+  font-family: inter;
+  src: url("/Inter-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+  text-transform: uppercase;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-cont {
+  height: 70%;
+  width: 30%;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  position: relative;
+  padding: 2em;
+}
+.back-btn {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  display: none;
+}
+.back-btn button {
+  width: 2vw;
+  background-color: transparent;
+  color: orange;
+}
+.main-cont-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.farmer {
+  display: none;
+}
+.administor {
+  display: none;
+}
+.coustmer {
+  display: none;
+}
+.main-dynamic-cont {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1em;
+  display: none;
+  width: 70%;
+}
+.opt-name {
+  font-size: 1.9vw;
+  margin-bottom: 0.6em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgb(94, 91, 91);
+}
+.id-cont {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2vw;
+  text-align: right;
+}
+.input-div {
+  width: 60%;
+}
+.id-name {
+  width: 35%;
+  /* text-align: right; */
+}
+.input-div input {
+  height: 2em;
+}
+.pass-cont {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2vw;
+  text-align: right;
+}
+.pass-name {
+  width: 35%;
+}
+.login-btn {
+  display: none;
+  margin-top: 1em;
+}
+
+button {
+  width: 5em;
+  height: 2em;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  background-color: orange;
+  font-size: 1.1vw;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.main-cont-buttons button {
+  width: 12vw;
+}
+
+/* farmer page  */
+
+.fm-main {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fm-main-cont {
+  height: 90%;
+  width: 80%;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 2em; */
+  position: relative;
+  /* padding: 2em; */
+}
+
+nav {
+  width: 100%;
+  height: 8%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 1.5em 1em;
+  justify-content: space-between;
+  border: 5px solid #d9d9d9;
+}
+.fm-nav-left {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.nav-left-profile {
+  width: 25%;
+}
+
+.nav-left-profile img {
+  width: 70%;
+}
+.fm-nav-right {
+  display: flex;
+  width: 25%;
+  justify-content: space-around;
+}
+
+.fm-nav-right button {
+  width: 42%;
+  font-size: 0.9vw;
+}
+.fm-dynamic-cont {
+  height: 91%;
+  /* background-color: red; */
+  display: flex;
+}
+
+.fm-dy-left-img-cont {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.fm-dy-left-img-cont img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fm-dy-right-cont {
+  width: 60%;
+  /* background-color: black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.fm-right-top-name-cont {
+  width: 75%;
+  height: 8%;
+  display: flex;
+  color: orange;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.8vw;
+  font-weight: 900;
+  background-color: white;
+  margin-top: 0.5em;
+}
+
+.fm-right-btm-content-cont {
+  width: 75%;
+  height: 80%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 1em;
+}
+
+.fm-right-details {
+  margin-top: 3em;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.fm-right-det-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fm-right-left-det {
+  width: 40%;
+  text-align: right;
+}
+.fm-right-right-det {
+  width: 55%;
+}
+
+.fm-right-right-det input {
+  width: 100%;
+  height: 2em;
+}
+
+.fm-add-btn {
+  position: absolute;
+  bottom: -4%;
+  width: 30%;
+  height: 10%;
+  border-radius: 120px;
+}
